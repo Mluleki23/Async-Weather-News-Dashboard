@@ -1,0 +1,28 @@
+{
+  "name": "async-weather-news-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mluleki23/Async-Weather-News-Dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mluleki23/Async-Weather-News-Dashboard/issues"
+  },
+  "homepage": "https://github.com/Mluleki23/Async-Weather-News-Dashboard#readme",
+  "dependencies": {
+    "@types/node": "^24.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
