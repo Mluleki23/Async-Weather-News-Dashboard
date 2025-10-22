@@ -91,6 +91,6 @@ fetchGeocode(city, (coords) => {
       }
     });
   } else {
-    log(`Could not find coordinates for city: ${city}`);
+    log(`Error: Could not find coordinates for city: ${city}`);
   }
 });
