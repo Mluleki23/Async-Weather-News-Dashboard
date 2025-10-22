@@ -46,7 +46,12 @@ async function displayData() {
     const weatherData = await fetchWeatherData("London");
     console.log("Weather Data:", weatherData);
     const newsData = await fetchNews();
-    console.log("News Data:", newsData);
+    if (newsData && newsData.posts) {
+      console.log("News:");
+      newsData.posts.slice(0, 3).forEach((post: any, index: number) => {
+        console.log(`${index + 1}. ${post.title}`);
+      });
+    }
   } catch (error) {
     console.error("Error:", error);
   }

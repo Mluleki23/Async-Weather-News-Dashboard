@@ -81,8 +81,11 @@ fetchGeocode(city, (coords) => {
         log(`   Time: ${time}`);
 
         fetchNews((newsData) => {
-          if (newsData) {
-            log("News Data:", newsData);
+          if (newsData && newsData.posts) {
+            log("News:");
+            newsData.posts.slice(0, 3).forEach((post: any, index: number) => {
+              log(`${index + 1}. ${post.title}`);
+            });
           }
         });
       }
