@@ -1,3 +1,4 @@
+<img src="https://socialify.git.ci/Mluleki23/Async-Weather-News-Dashboard/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Async-Weather-News-Dashboard" width="640" height="320" />
 🧠 Project Overview
 
 This project demonstrates different asynchronous programming styles in Node.js by fetching weather data and news headlines from public APIs.
