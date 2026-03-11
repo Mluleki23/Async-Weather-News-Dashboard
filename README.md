@@ -1,59 +1,41 @@
 <img src="https://socialify.git.ci/Mluleki23/Async-Weather-News-Dashboard/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Async-Weather-News-Dashboard" width="640" height="320" />
 🧠 Project Overview
 
-This project demonstrates different asynchronous programming styles in Node.js by fetching weather data and news headlines from public APIs.
-It showcases how callbacks, promises, and async/await handle asynchronous operations and error management.
+Async Weather News Dashboard
 
-🚀 Features
+A TypeScript project demonstrating asynchronous fetching of weather and news data using callbacks.
 
-Fetch live weather data (Open-Meteo API)
+Quick Setup
 
-Fetch news headlines (DummyJSON or similar API)
+Run this single command to clone, install dependencies, and start the project:
 
-Implemented using:
+git clone https://github.com/Mluleki23/Async-Weather-News-Dashboard.git && cd Async-Weather-News-Dashboard && npm install && npm start
+Scripts (Optional)
 
-🧩 Callbacks
+npm start → Run the project
 
-🔗 Promises
+npm run dev → Watch & restart with nodemon
 
-⚙️ Async/Await (try...catch)
+npm run build → Compile TypeScript to JavaScript
 
-Uses:
+Project Files
 
-Promise.all() → Fetch weather + news simultaneously
+src/callbackVersion.ts → Main TypeScript file
 
-Promise.race() → Display fastest response
+dist/ → Compiled JavaScript output
 
-🗂️ Folder Structure
-src/
- ├── callbackVersion.ts
- ├── promiseVersion.ts
- ├── asyncAwaitVersion.ts
-
-🧪 Run the App
-
-Use the following commands to test each version:
-
-# Callback version
-npm run callback
-
-# Promise version
-npm run promise
-
-# Async/Await version
-npm run async
-
-
-(You can define these scripts in package.json for convenience.)
-
-⚙️ Technologies Used
-
-Node.js
+Dependencies
 
 TypeScript
 
 ts-node
 
-https module
+@types/node
 
-Public APIs (Open-Meteo, DummyJSON)
+nodemon (dev)
+
+License
+
+ISC License
+
+.
