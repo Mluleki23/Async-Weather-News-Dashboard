@@ -4,9 +4,9 @@ export async function fetchGeocode(city: string): Promise<{ lat: number; lon: nu
   const url = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json`;
   return new Promise((resolve, reject) => {
     http
-      .get(url, (res) => {
+      .get(url, (res: any) => {
         let data = "";
-        res.on("data", (chunk) => {
+        res.on("data", (chunk: any) => {
           data += chunk;
         });
         res.on("end", () => {
@@ -19,7 +19,7 @@ export async function fetchGeocode(city: string): Promise<{ lat: number; lon: nu
           }
         });
       })
-      .on("error", (err) => {
+      .on("error", (err: any) => {
         console.error(err);
         reject(err);
       });
@@ -30,16 +30,16 @@ export async function fetchWeatherData(lat: number, lon: number): Promise<any> {
   const url = `https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m`;
   return new Promise((resolve, reject) => {
     http
-      .get(url, (res) => {
+      .get(url, (res: any) => {
         let data = "";
-        res.on("data", (chunk) => {
+        res.on("data", (chunk: any) => {
           data += chunk;
         });
         res.on("end", () => {
           resolve(JSON.parse(data));
         });
       })
-      .on("error", (err) => {
+      .on("error", (err: any) => {
         console.error(err);
         reject(err);
       });
@@ -50,16 +50,16 @@ export async function fetchNews(): Promise<any> {
   const url = `https://dummyjson.com/posts`;
   return new Promise((resolve, reject) => {
     http
-      .get(url, (res) => {
+      .get(url, (res: any) => {
         let data = "";
-        res.on("data", (chunk) => {
+        res.on("data", (chunk: any) => {
           data += chunk;
         });
         res.on("end", () => {
           resolve(JSON.parse(data));
         });
       })
-      .on("error", (err) => {
+      .on("error", (err: any) => {
         console.error(err);
         reject(err);
       });
