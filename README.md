@@ -1,41 +1,49 @@
 <img src="https://socialify.git.ci/Mluleki23/Async-Weather-News-Dashboard/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Async-Weather-News-Dashboard" width="640" height="320" />
-🧠 Project Overview
 
-Async Weather News Dashboard
 
-A TypeScript project demonstrating asynchronous fetching of weather and news data using callbacks.
 
-Quick Setup
+---
 
-Run this single command to clone, install dependencies, and start the project:
+# 🌦️ Async Weather News Dashboard
 
-git clone https://github.com/Mluleki23/Async-Weather-News-Dashboard.git && cd Async-Weather-News-Dashboard && npm install && npm start
-Scripts (Optional)
+## 📖 Description
 
-npm start → Run the project
+A TypeScript project demonstrating asynchronous programming (callbacks) to fetch weather and news data.
 
-npm run dev → Watch & restart with nodemon
+---
 
-npm run build → Compile TypeScript to JavaScript
+## 🚀 Features
 
-Project Files
+* Async operations using callbacks
+* Weather and news data simulation
+* TypeScript-based project
 
-src/callbackVersion.ts → Main TypeScript file
+---
 
-dist/ → Compiled JavaScript output
+## 🛠️ Tech Stack
 
-Dependencies
+TypeScript • Node.js
 
-TypeScript
+---
 
-ts-node
+## ⚙️ Setup
 
-@types/node
+```bash
+git clone https://github.com/Mluleki23/Async-Weather-News-Dashboard.git
+cd Async-Weather-News-Dashboard
+npm install
+```
 
-nodemon (dev)
+---
 
-License
+## ▶️ Run
 
-ISC License
+```bash
+npm start
+```
+
+---
+
+
 
 .
